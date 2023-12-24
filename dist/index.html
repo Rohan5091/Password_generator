@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="main text-white container bg-blue-700 h-[100vh] w-[100vw] flex items-center justify-center ">
+         <div class=" lg:py-12 p-6 border-white border-2 rounded  "> 
+              <p class=" lg:text-3xl sm:text-3xl text-2xl font-extrabold mb-5 text-center text-white "> Password Generator </p>
+              <form class=" flex w-[100%] items-center flex-col  gap-5 justify-center" >
+                  <input class="  p-1  bg-white text-black  border-white rounded  outline-none " type="text" id="dis_password" placeholder="click on Generator Button">
+                   <div class=" flex gap-2  ">
+                    <input class="bg-blue-500 text-sm active:text-black lg:text-lg rounded py-2 px-2 sm:px-10 cursor-pointer " type="button" value="Generate" id="generate">
+                    <input class="bg-blue-500 text-sm active:text-black lg:text-lg  rounded p-2 cursor-pointer " type="button" value="Copy To Clipboard" id="copy">
+                   </div>
+                    <div>
+                    <label class="mr-16 font-bold  sm:text-sm lg:text-xl " for="plengh"> Password Length</label>
+                    <input  class=" cursor-pointer outline-none text-black w-12" type="number" name="Password_length" id="plengh">
+                  </div>
+                  
+                  
+                     <div>
+                        <label class="mr-8 font-bold  sm:text-lg lg:text-xl" for="uppercase"> Include uppercase letters</label>
+                        <input class=" cursor-pointer " type="checkbox" name="uppercase" id="uppercase">
+                     </div>
+                     <div>
+                        <label class="mr-8 font-bold sm:text-lg lg:text-xl" for="lowercase"> Include lowercase letters</label>
+                        <input class=" cursor-pointer " type="checkbox" name="lowercase" id="lowercase">
+                     </div>
+                     <div>
+                        <label class="mr-28 font-bold sm:text-lg lg:text-xl" for="number"> Include numbers</label>
+                        <input class=" cursor-pointer " type="checkbox" name="number" id="number">
+                     </div>
+                     <div>
+                        <label class="mr-28 font-bold sm:text-lg lg:text-xl" for="symbols"> Include symbols</label>
+                        <input class=" cursor-pointer " type="checkbox" name="symbols" id="symbols">
+                     </div>
+                 
+                  
+              </form>
+         </div>
+
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
